@@ -1,3 +1,14 @@
+## Summary
+
+This repo hosts scripts to:
+
+1. generate BED and rsID files for chr22 SNPs, and 
+2. extract Eigen scores for each SNP
+
+Some of the Input/Output files can be found at [http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/datafiles_chr22_SNPs/](http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/datafiles_chr22_SNPs/).
+
+Eigen source files are also needed, which can be found at [http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/eigen/](http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/eigen/)
+
 ## Step 1: Download SNP Information from Biomart
 
 Download SNPs on chr22 from BioMart (GRCH37.p13)
@@ -7,7 +18,7 @@ Download SNPs on chr22 from BioMart (GRCH37.p13)
 Example records:
 
 | Variant name	| Chromosome/scaffold name | Chromosome/scaffold position start (bp) | Chromosome/scaffold position end (bp) |
-|---------------|--------------------------|-----------------------------------------|---------------------------------------|
+|:-------------:|:------------------------:|:---------------------------------------:|:-------------------------------------:|
 |rs1285450127	|22	|16050001	|16050001|
 |rs1442173437	|22	|16050005	|16050005|
 |rs1569341485	|22	|16050005	|16050008|
@@ -34,8 +45,7 @@ Use script `tabix_eigen.sh`.
 - Requirement: `sudo apt install tabix`
 - Input files:
   - SNP BED => `mart_export_hg19_chr22_SNP.bed`
-  - Eigen => `Eigen_hg19_noncoding_annot_chr22.tab.bgz` + `Eigen_hg19_noncoding_annot_chr22.tab.bgz.tbi`
-    - Downloadable from [http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/genomewide/](http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/genomewide/)
+  - Eigen source => `Eigen_hg19_noncoding_annot_chr22.tab.bgz` + `Eigen_hg19_noncoding_annot_chr22.tab.bgz.tbi`
 - Temporary Output:
   - Files ending with `.out` suffix, including:
     - Splitted `.out` files like `mart_export_hg19_chr22_SNP_1.out`
