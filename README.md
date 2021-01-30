@@ -38,10 +38,10 @@ Use script `tabix_eigen.sh`.
     - Downloadable from [http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/genomewide/](http://files.cgrb.oregonstate.edu/Ramsey_Lab/cerenkov/genomewide/)
 - Temporary Output:
   - Files ending with `.out` suffix, including:
-    - Splitted `.out` files like `Eigen_hg19_noncoding_annot_chr22_1.out`
-    - A combined `Eigen_hg19_noncoding_annot_chr22.out`
-  - Splitted `.bed` files like `Eigen_hg19_noncoding_annot_chr22_1.bed`
-- True output file: `Eigen_hg19_noncoding_annot_chr22.score`
+    - Splitted `.out` files like `mart_export_hg19_chr22_SNP_1.out`
+    - A combined `mart_export_hg19_chr22_SNP.out`
+  - Splitted `.bed` files like `mart_export_hg19_chr22_SNP_1.bed`
+- True output file: `mart_export_hg19_chr22_SNP.score`
 
 What does the script do?
 
